@@ -1,3 +1,9 @@
+#Homework by 6/7 Friday
+
+#Pick up names if you find an 'n' inside the name and create new list and print
+#Divide the list4 into even and odd lists
+
+
 list1 = [0, 1, 2]
 list2 = [3, 4, 5]
 list3 = ["Yuko", "Ren", "Yushi", "Esteban"]
@@ -14,6 +20,7 @@ total_n_name = []
 total_even = []
 total_odd = []
 
+
 for i in total:
     num = i + 3
     total_new.append(num)
@@ -29,17 +36,18 @@ for i in list3:
         new_name = i
     total_esteban.append(new_name)
 
+#for i in list3:
+ #   name_n = i for i in list3 if 'n' in i
+  #  total_n_name.append(name_n)
+
+total_n_name = [i for i in list3 if "n" in i]
+
 for i in list4:
     if i % 2 == 0:
         total_even.append(i)
     else:
         total_odd.append(i)
-    
-    
-#Homework by 6/7 Friday
 
-#Pick up names if you find an 'n' inside the name and create new list and print
-#Divide the list4 into even and odd lists
 
 print(total)
 print(total_new)
